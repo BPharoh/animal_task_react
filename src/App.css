@@ -1,0 +1,25 @@
+.firstContainer {
+  background-color: blanchedalmond;
+  padding: 30px 40px;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 6, 1fr;
+  grid-template-rows: auto;
+}
+
+.animalsList {
+display: flex;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+h2 {
+  text-align: center;
+}
+
+.topPart {
+  text-align: center;
+}
