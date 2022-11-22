@@ -73,13 +73,13 @@ class AnimalsOnly extends Component {
       });
 
     return (
-    <div className='firstContainer'>
-      <div className='topPart'>
-        <h1>{this.state.animals.length} Animals</h1>
-        <input type="text" onChange={this.searchHandler} placeholder="Search Animals" />
+    <div>
+      <h1 className='top_part'> There are <span>{this.state.animals.length}</span> animals displayed on this page</h1> 
+         <div className='search_style'>
+        <input type="text" onChange={this.searchHandler} placeholder="Search animals by name" />
       </div>
       <div  className='animalsContainer'> {animalsList}</div>
-    </div>
+    </div> 
     );
   }
 };

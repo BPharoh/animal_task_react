@@ -49,11 +49,7 @@ class BirdsOnly extends Component {
     searchHandler = (e) => {
       this.setState({search: e.target.value});
     };
-  
     
-  
-  
-  
     render() {
   
       const birdFilter = this.state.birds.filter((bird) => { 
@@ -73,10 +69,10 @@ class BirdsOnly extends Component {
         });
   
       return (
-      <div className='firstContainer'>
-        <div className='topPart'>
-          <h1>{this.state.birds.length} birds</h1>
-          <input type="text" onChange={this.searchHandler} placeholder="Search birds" />
+      <div>
+        <h1 className='top_part'> There are <span>{this.state.birds.length}</span> birds displayed on this page</h1> 
+        <div className='search_style'>
+          <input type="text" onChange={this.searchHandler} placeholder="Search birds by name" />
         </div>
         <div  className='animalsContainer'> {birdsList}</div>
       </div>
